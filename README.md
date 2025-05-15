@@ -18,27 +18,28 @@
 ---
 ---
 
-# Motive
+## Motive
 
 To have a comprehensive and optimal Custom User Prompt (Rules) for AI coding. These kind of rules are very much required as the **Quality** of Outputs is a function $[response \, Quality = f(prompt, LLM \, model)]$. Thus, for best performance we need very detailed instructions while also giving the LLM the freedom to explore and learn. I came up with this after first reading many many existing rules, experimenting with mine and finalized these as tested against real use-cases.
 **Applications:** Tested for building Agentic products, plus writing research papers in AI.
 
-## Target Audience: Begineer Fiendly & Potential Unlock for Experienced Folks
+## Target Audience: Beginner Friendly & Potential Unlock for Experienced Folks
 
-Both people exploring AI without prior knowledge but tasting the AI/LLM/Agents landscape. And experieced folks adapting to and integrating AI in their workflow. As better prompts may lead to better outputs.
+Both people exploring AI without prior knowledge but tasting the AI/LLM/Agents landscape. And experienced folks adapting to and integrating AI in their workflow. As better prompts may lead to better outputs.
 
 ## Features
 
 1. **Cross-Platform Compatibility:** Use in *Any* IDE *Any* number of different computers for the same project! Respects Cursor, CLINE, RooCode Rule guidelines and mechanisms natively. Like For CLINE rules use use **PLAN Mode** as in their system prompts, whereas for RooCode we use **Architect Mode**. Similarly **Act Mode** for CLINE and **Code Mode** for RooCode. **Debug Mode** for RooCode has been used additionally.
 2. **Latest Compatibility:** Designed to be compatible with the latest versions of Cursor and CLINE, RooCode. We have used `.cursor/rules/` directory for Cursor and ditched the deprecated `.cursorrules` file.For RooCode, we have used `.roo/` directory and sub directories within and not the `.clinerules` file. With CLINE we have used the the `.clinerules/` directory with sub-directories **not**  **deprecated** `.clinerules` file .
-3. **Minimal Token Usage:** We have tried to make it **AS MUCH AS POSSIBLE lean on TOKEN USAGE**. We have (a) incorporated newer Modes in RooCode and Cursor, that uses minimum tokens with efficiently carrying out tasks. (b) load only relevnt context.
+3. **Minimal Token Usage:** We have tried to make it **AS MUCH AS POSSIBLE lean on TOKEN USAGE**. We have (a) incorporated newer Modes in RooCode and Cursor, that uses minimum tokens with efficiently carrying out tasks. (b) load only relevant context.
 
-- We have organized the rule files to be only added when demanded (on-demand-loading). For Cursor we have seperated the rules into seperate `.mdc` files in `.cursor/rules/` directory, and configured the files so as to be added only when required. For RooCode, we have seperated the ruls into the mode specific rule files `.roo/rules-{mode}/` and not everything in `.clinerules` file. This, will only load the required rules for corresponding modes. For CLINE we did some workaround! But not much support there to save tokens for custom prompts.
+   - We have organized the rule files to be only added when demanded (on-demand-loading). For Cursor we have separated the rules into separate `.mdc` files in `.cursor/rules/` directory, and configured the files so as to be added only when required. For RooCode, we have separated the rules into the mode specific rule files `.roo/rules-{mode}/` and not everything in `.clinerules` file. This will only load the required rules for corresponding modes. For CLINE we did some workaround! But not much support there to save tokens for custom prompts.
 
 4. **Common Memory Bank:** We have a common memory bank for all the AI assistants. This maintains same context across all the AI assistants.
 5. **Fundamental Software Engineering Principles:** This is to ensure that the AI is following the best practices in software development. Its **Agile** Development workflow.
+6. **AUTOMATICALLY updates documentation after any planning/implementation/debugging:** The custom prompts are designed such that it will ALWAYS update the documentation after any change. So you focus on building, and it will take care of other things.
+
 Enough talking, let's get started.
-5. **AUTOMATICALLY updates documentation after any planning/implementation/debugging:** The custom prompts are designed such that it will ALWAYS upadate the documentation after any change. So you focus on building, and it will take care of other things.
 
 ## Quickstart: Using this Template for AI Coding
 
@@ -48,7 +49,7 @@ This template provides a starting point for AI pair-coding projects. To get star
 
 1. **Cursor:** put the `.cursor/rules/` directory in your project root.
 2. **RooCode:** put the `.roo/` directory in your project root.
-3. **CLINE:** put the `.clinerules/` direcctory in your project root.
+3. **CLINE:** put the `.clinerules/` directory in your project root.
 
 *Note: All these can be stacked on top of each other, simultaneously.*
 
