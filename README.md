@@ -53,8 +53,9 @@ This template provides a starting point for AI pair-coding projects. To get star
 
 *Note: All these can be stacked on top of each other, simultaneously.*
 
-**DONE BASIC SETUP**
-This will setup the Custom prompts and Memory Bank. What's left are Custom Modes. They are not necessary, but do that if you want to save tokens ($$).
+### DONE BASIC SETUP
+
+>This will setup the Custom prompts and Memory Bank. What's left are Custom Modes. They are not necessary, but do that if you want to save tokens ($$).
 **Note: DO NOT COPY `.git` file from this repo. Cautiously AVOID that.**
 ---
 
@@ -66,7 +67,7 @@ We will create Custom Modes in Cursor and Roo-Code. CLINE still not supports it.
 
 ## Roo Code
 
-### Chat Mode
+### RooCode Chat Mode
 
 Step 1: Go to Prompts.
 
@@ -96,7 +97,7 @@ It should look like this:
 
 Rest everything is already at `.roo/system-prompt-chat`.
 
-### Write Mode
+### RooCode Write Mode
 
 Step 3:
 ![chat](resources/images/roo_code/write_creation.png)
@@ -116,7 +117,7 @@ It should look like this:
 
 Rest everything is already at `.roo/system-prompt-write`.
 
-### MCP Mode
+### RooCode MCP Mode
 
 Step 3:
 ![chat](resources/images/roo_code/mcp_creation.png)
@@ -138,7 +139,7 @@ Rest everything is already at `.roo/system-prompt-mcp`.
 
 ## Cursor
 
-### Chat Mode
+### Cursor Chat Mode
 
 Step 1:
 In the Modes section go to "Add Custom Mode"
@@ -156,7 +157,7 @@ In "*Advanced options*", in the box for custom instructions, paste:
 > 4. Very rigrous and deep Reasoning.
 > 5. Be very detailed and analytical.
 
-### Write Mode
+### Cursor Write Mode
 
 Step 2:
 ![chat](resources/images/cursor/write.png)
@@ -165,7 +166,7 @@ Fill as per the image.
 In "*Advanced options*", in the box for custom instructions, paste:
 >Create and Edit files and directories.
 
-### MCP Mode
+### Cursor MCP Mode
 
 Step 2:
 ![chat](resources/images/cursor/mcp.png)
@@ -183,7 +184,7 @@ In "*Advanced options*", in the box for custom instructions, paste:
 ---
 ---
 
-## Directory Structure
+## Project Directory Structure
 
 Create this directory structure for the project:
 
@@ -246,7 +247,7 @@ Mode Specific Instructions:
 **Note1**: *The benefit of these symbolic links is that there is only one instance, and editing any will update all.*
 **Note2**: *The directory `.cursor/rules/` is containing original files, so **DO NOT DELETE THEM**. Even if you are not using **Cursor**, have them.*
 
-# Custom Modes
+## Custom Modes
 
 ## 1. Chat
 
@@ -264,19 +265,19 @@ The system prompt has been trimmed down to the minimum.
 **Note:** *This mode is to be used along with other modes, and not standalone.* There's a tool *`attemp_completion`* that is used to complete the task , which I removed from the system prompt. Still have *`switch_mode`* to switch the modes.
 So, it will change to "Chat" mode after its completion by default.
 
-# Tips in General Using Cursor, CLINE, RooCode, Windsurf
+## Tips in General Using Cursor, CLINE, RooCode, Windsurf
 
 ## CLINE/RooCode
 
 1. Every time you change Roo Code **mode** in the middle of an task, it changes the system prompt and reset the prompt caching.
 
-# The Rules Template: Universal Rules for AI Coding Assistants 🔥
+## The Rules Template: Universal Rules for AI Coding Assistants 🔥
 
 This template provides a robust and adaptable framework of rules designed to enhance the performance of AI coding assistants like Cursor and CLINE. Rooted in established software engineering principles and documentation best practices, it ensures consistent and effective AI-assisted development across different platforms.
 
-## Directory Structure
+## Project Directory Structure
 
-Below is the top-level directory structure from <em>clinerules/directory-structure</em>. This structure is central to how the project is organized:
+Below is the top-level directory structure from *clinerules/directory-structure*. This structure is central to how the project is organized:
 
 ```mermaid
 flowchart TD
@@ -293,15 +294,15 @@ flowchart TD
     Root --> Other[Other Directories]
 ```
 
-• <code>.cursor/rules/</code> – Custom rules for Cursor  
-• <code>.clinerules/</code> – Custom rules for CLINE  
-• <code>docs/</code> – Project documentation, architecture, and reference materials  
-• <code>tasks/</code> – Task plans, active context, RFCs, and general to-do items  
-• <code>src/</code> – Main source code  
-• <code>test/</code> – Testing suite  
-• <code>utils/</code> – Utility scripts or libraries  
-• <code>config/</code> – Configuration files  
-• <code>data/</code> – Data resources  
+• `.cursor/rules/` – Custom rules for Cursor  
+• `.clinerules/` – Custom rules for CLINE  
+• `docs/` – Project documentation, architecture, and reference materials  
+• `tasks/` – Task plans, active context, RFCs, and general to-do items  
+• `src/` – Main source code  
+• `test/` – Testing suite  
+• `utils/` – Utility scripts or libraries  
+• `config/` – Configuration files  
+• `data/` – Data resources  
 • (and potentially more directories as the project grows)
 
 ## Core Principles
@@ -324,19 +325,19 @@ And based on the popular knowledge and research in these two fileds, we came up 
 
 This template relies on a carefully orchestrated system of directories and files for Cursor, Windsurf, CLINE and RooCode Within each environment, there are exactly three crucial files that shape how the AI operates:
 
-1. <strong>rules</strong> –
-   Thois can house generic rules. Bring your own flavour to this minimal document. Below are three files: (a) plan, (b) implement, (c) debug, that defines workflows for these three tasks based on refining 100s of rule repositories and software engineering best practices:
+1. **rules** –
+   This can house generic rules. Bring your own flavor to this minimal document. Below are three files: (a) plan, (b) implement, (c) debug, that defines workflows for these three tasks based on refining 100s of rule repositories and software engineering best practices:
 
-2. <strong>plan</strong> – Defines the Workflow to be followed for any Planning based on *chain of thinking*. includes **exhaustive searching and optimal plan, rigourous reasoning and user validation**.
-3. <strong>implement</strong> - Defines the Workflow to be followed for any Implementation. inspired by concepts like **seperation of concerns, modular design, and incremental development**. Has testing mandatory after every significant implementation.
-4. <strong>debug</strong> - This file defines rules for debugging when stuck in a loop or a hard debugging. Supports looking at the web and for previously solved errors too.
-5. <strong>memory</strong> –
+2. **plan** – Defines the Workflow to be followed for any Planning based on *chain of thinking*. includes **exhaustive searching and optimal plan, rigorous reasoning and user validation**.
+3. **implement** - Defines the Workflow to be followed for any Implementation. inspired by concepts like **separation of concerns, modular design, and incremental development**. Has testing mandatory after every significant implementation.
+4. **debug** - This file defines rules for debugging when stuck in a loop or a hard debugging. Supports looking at the web and for previously solved errors too.
+5. **memory** –
    Next comes the recommended documentation. Software documentation starts with PRDs Recording the requirements, architecture plan, technical plan, and the RFCs for individual functionality or group of functionalities.
-So our documentation that also served as a context is very relevant for an AI cod as it has mostly the knowledge and the skills to work on and with these proper software documentations.
-6. <strong>directory-structure</strong> (directory-structure) –
-   This is a very simple file stating the directory structure so that all parts of a project development is covered like : (a) code, (b) test, (c) configurations, (d) data, (e) project rules, etc separately and in modular approach.
+   So our documentation that also served as a context is very relevant for an AI code as it has mostly the knowledge and the skills to work on and with these proper software documentations.
+6. **directory-structure** (directory-structure) –
+   This is a very simple file stating the directory structure so that all parts of a project development is covered like: (a) code, (b) test, (c) configurations, (d) data, (e) project rules, etc separately and in modular approach.
 
-In <strong>Cursor </strong>, these three files reside in <code>.cursor/rules</code>:
+In **Cursor**, these three files reside in `.cursor/rules`:
 
 ```bash
 .cursor/rules/rules.mdc
@@ -347,7 +348,7 @@ In <strong>Cursor </strong>, these three files reside in <code>.cursor/rules</co
 .cursor/rules/directory-structure.mdc
 ```
 
-In <strong>CLINE</strong>, these three files reside in <code>.clinerules/</code>:
+In **CLINE**, these three files reside in `.clinerules/`:
 
 ```bash
 .clinerules/rules
@@ -358,7 +359,7 @@ In <strong>CLINE</strong>, these three files reside in <code>.clinerules/</code>
 .clinerules/directory-structure
 ```
 
-For <strong>Windsurf</strong> just add the files in <code>.windsurfrules</code>.
+For **Windsurf** just add the files in `.windsurfrules`.
 
 ## Key Files and Concepts
 
@@ -438,24 +439,24 @@ flowchart TD
 
     Product Requirement Documents (PRDs) are foundational blueprints in software development, defining what a product should achieve and guiding teams to align on scope, features, and objectives .
 
-2. **`architecture.md` (docs/architecture.md):** System Architecture Document.
+1. **`architecture.md` (docs/architecture.md):** System Architecture Document.
     - Outlines the system's design, component relationships, and dependencies.
 
     Software architecture documentation is a blueprint that captures design decisions, component interactions, and non-functional requirements.
 
-3. **`technical.md` (docs/technical.md):** Technical Specifications Document.
+2. **`technical.md` (docs/technical.md):** Technical Specifications Document.
     - Details the development environment, technologies used, key technical decisions, design patterns, and technical constraints.
 
-4. **`tasks_plan.md` (tasks/tasks_plan.md):** Task Backlog and Project Progress Tracker.
+3. **`tasks_plan.md` (tasks/tasks_plan.md):** Task Backlog and Project Progress Tracker.
     - Provides an in-depth list of tasks, tracks project progress, current status, and known issues.
 
-5. **`active_context.md` (tasks/active_context.md):** Active Development Context.
+4. **`active_context.md` (tasks/active_context.md):** Active Development Context.
     - Captures the current focus of development, active decisions, recent changes, and next steps.
 
-6. **`error-documentation.mdc` (.cursor/rules/error-documentation.mdc):** Error Documentation.
+5. **`error-documentation.mdc` (.cursor/rules/error-documentation.mdc):** Error Documentation.
     - Documents reusable fixes for mistakes and corrections, serving as a knowledge base of known issues and resolutions.
 
-7. **`lessons-learned.mdc` (.cursor/rules/lessons-learned.mdc):** Lessons Learned Journal.
+6. **`lessons-learned.mdc` (.cursor/rules/lessons-learned.mdc):** Lessons Learned Journal.
     - A project-specific learning journal that captures patterns, preferences, and project intelligence for continuous improvement.
 
 **Context Files (Optional):**
