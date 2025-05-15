@@ -8,14 +8,17 @@ description: Always include these rules.
 globs: 
 alwaysApply: true
 ---
+# Planning Workflow
+
 Before every Plan/Architect task ALWAYS do 3 things:
 a. Read the existing documentation in `docs/` : i. `docs/architecture.md`, ii. `docs/product_requirement_docs.md`, iii. `docs/technical.md`
 b. Read the plans and related task planning & context in `tasks/`: i. `tasks/active_context.md`, ii. `tasks/tasks_plan.md`
----
-# Below is the Planning Workflow to follow:
 
-1. UNDERSTAND the REQUIREMENTS:
+## Workflow Steps
+
+1. **UNDERSTAND the REQUIREMENTS**:
 <CLARIFICATION>
+
 - Always ask for clarifications and follow-ups.
 - Identify underspecified requirements and ask for detailed information.
 - Fully understand all the aspects of the problem and gather details to make it very precise and clear.
@@ -24,8 +27,9 @@ b. Read the plans and related task planning & context in `tasks/`: i. `tasks/act
 - Only after having hundred percent clarity and confidence, proceed for SOLUTION.
 </CLARIFICATION>
 
-2. FORMULATING the SOLUTION:
+1. **FORMULATING the SOLUTION**:
 <STEP BY STEP REASONING>
+
 <DECOMPOSE>
 - Have a meta architecture plan for the solution.
 - Break down the problem into key concepts and smaller sub-problems.
@@ -34,6 +38,7 @@ a. Think about all possible ways to solve the problem.
 b. Set up the evaluation criterias and trade-offs to access the merit of the solutions.
 c. Find the optimal solution and the criterias making it optimal and the trade-offs involved.
 <WEB USE> Can use the web if needed using use_mcp_tool commands, particularly use the search tool from Perplexity. Example:
+```
 <use_mcp_tool>
 <server_name>perplexity-mcp</server_name>
 <tool_name>search</tool_name>
@@ -44,6 +49,7 @@ c. Find the optimal solution and the criterias making it optimal and the trade-o
 }
 </arguments>
 </use_mcp_tool>
+```
 </WEB USE>
 
 <MULTI ATTEMPTS>
@@ -51,30 +57,30 @@ a. Reason out rigorously about the optimality of the solution.
 b. Question every assumption and inference, and support them with comprehensive reasoning.
 c. Think of better solutions than the present one Combining the strongest aspects of different solutions.
 d. Repeat the process <MULTI ATTEMPTS> refining and integrating different solutions into one until a strong solution is found.
-d. Can use <WEB USE> if needed to do research.
+e. Can use <WEB USE> if needed to do research.
 </MULTI ATTEMPTS>
 </STEP BY STEP REASONING>
 
-3. SOLUTION VALIDATION:
+1. **SOLUTION VALIDATION**:
 
 <REASONING PRESENTATION>
-- Provide the PLAN with as much detail as possible. 
+- Provide the PLAN with as much detail as possible.
 - Break down the solution step-by-step and think every step in through detail with clarity.
 - Reason out its optimality w.r.t. other promising solutions.
-- Explicitly tell all your assumptions, choices and decisions 
+- Explicitly tell all your assumptions, choices and decisions
 - Explain trade-offs in solutions
 - restate my query in your own words if necessary after giving the solution
 </REASONING PRESENTATION>
 - Before implementing, validate the SOLUTION plan produced by <REASONING PRESENTATION>.
 
----
-# Features of the Plan:
-1. The plan should be:
-a. `extendable`: Further codes can be easily build on the current planning. And extending it in future will be well supported. Anticipate future functionalities and make the plan adaptable to those.
-b. `detailed`: The plan be very detailed, taking care of every aspect that will be affected with it and in every possible ways.
-c. `robust`: Plan for error scenarious and failure cases and have fallbacks for possible failure cases.   
-d. `accurate`: Every aspect should be in sync with each other and individual components should be correct and the interfaces should be correct.   
----
+## Features of the Plan
+
+The plan should be:
+
+1. **Extendable**: Further codes can be easily build on the current planning. And extending it in future will be well supported. Anticipate future functionalities and make the plan adaptable to those.
+2. **Detailed**: The plan be very detailed, taking care of every aspect that will be affected with it and in every possible ways.
+3. **Robust**: Plan for error scenarious and failure cases and have fallbacks for possible failure cases.
+4. **Accurate**: Every aspect should be in sync with each other and individual components should be correct and the interfaces should be correct.
 
 After every Plan/Architect task ALWAYS do 2 things:
 a. Document the plan into existing documentation and update files in `docs/` : i. `docs/architecture.md`, ii. `docs/product_requirement_docs.md`, iii. `docs/technical.md`

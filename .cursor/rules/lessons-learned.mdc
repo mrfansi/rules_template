@@ -8,3 +8,6 @@ description: Stores important patterns, preferences, and project intelligence, l
 globs: 
 alwaysApply: true
 ---
+# Lessons Learned
+
+<!-- This is a living document that captures important patterns, preferences, and project intelligence as progress happens. -->

@@ -8,13 +8,14 @@ description: Include these rules while IMPLEMENTATION/Coding.
 globs: 
 alwaysApply: true
 ---
+# TESTING (Always write TEST after IMPLEMENTATION) [ACT/Code MODE]
 
-[Step: 3] <MAKE CHANGES>
+## Initial Steps
 
 1. Document Current State in files specified by @memory.mdc  
-- What’s currently working?  
-- What’s the current error/issue?  
-- Which files will be affected?
+   - What's currently working?  
+   - What's the current error/issue?  
+   - Which files will be affected?
 
 2. Plan Single Logical Change at a Time
 
@@ -25,7 +26,7 @@ alwaysApply: true
 - architecture_preservation: Ensure that all new code integrates seamlessly with existing project structure and architecture before committing changes. Do not make changes that disrupt existing code organization or files.
 </INCREMENTAL ROLLOUTS>
 
-3. Simulation Testing
+1. Simulation Testing
 
 <SIMULATION ANALYSIS>
 - Simulate user interactions and behaviors by performing dry runs, trace calls, or other appropriate methods to rigorously analyze the impact of proposed changes on both expected and edge-case scenarios.  
@@ -38,25 +39,9 @@ alwaysApply: true
 
 - If Simulation Testing Passes, do the actual implementation.
 
-[Step: 4] Perform <TESTING>
+## Testing Process
 
-[Step: 5] LOOP 1-4 and implement all changes  
-- Incorporate all the changes systematically, one by one.  
-- Verify the changes and test them one by one.
-
-[Step: 6] Optimize the implemented codes  
-- Optimize the implemented code, after all changes are tested and verified.
-
-</SYSTEMATIC CODE PROTOCOL>
-
-<REFERENCE>
-- Reference relevant documentation and best practices  
-- Use <WEB USE> if needed to refer to documentation or best practices
-</REFERENCE>
-
-# TESTING (Always write TEST after IMPLEMENTATION) [ACT/Code MODE]
 <TESTING>
-
 <DEPENDENCY BASED TESTING>  
 Create unit tests for any new functionality. Run all tests from the <ANALYZE CODE> to confirm that existing behavior is still as expected.  
 </DEPENDENCY BASED TESTING>
@@ -75,10 +60,30 @@ After you propose a change, run the tests yourself, and verify that it passes. D
 - Consider potential regressions and how to prevent them  
 </TEST PLAN>
 
-2. Write test code for ANY added critical functionality ALWAYS. For initial test generation use <DEPENDENCY BASED TESTING> and <NO BREAKAGE ASSERTION>. Then use <TEST PLAN> to write code for extensive testing.
+1. Write test code for ANY added critical functionality ALWAYS. For initial test generation use <DEPENDENCY BASED TESTING> and <NO BREAKAGE ASSERTION>. Then use <TEST PLAN> to write code for extensive testing.
 
-3. Document testing as specified in @memory.mdc
+1. Document testing as specified in @memory.mdc
 
 After every code implementation/change ALWAYS do 2 things:  
 b. Update the documentation in `docs/` and `tasks/`.
 </TESTING>
+
+## Implementation Workflow
+
+[Step: 4] Perform <TESTING>
+
+[Step: 5] LOOP 1-4 and implement all changes  
+
+- Incorporate all the changes systematically, one by one.  
+- Verify the changes and test them one by one.
+
+[Step: 6] Optimize the implemented codes  
+
+- Optimize the implemented code, after all changes are tested and verified.
+
+</SYSTEMATIC CODE PROTOCOL>
+
+<REFERENCE>
+- Reference relevant documentation and best practices  
+- Use <WEB USE> if needed to refer to documentation or best practices
+</REFERENCE>

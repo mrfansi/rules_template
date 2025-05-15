@@ -8,10 +8,12 @@ description: Include these rules while IMPLEMENTATION/Coding.
 globs: 
 alwaysApply: true
 ---
+# IMPLEMENTATION (ACT MODE/Code MODE)
+
 Before every code implementation/change ALWAYS do 2 things:
 a. Read and understand the documentation in `docs/` and `tasks/`
 
-# IMPLEMENTATION (ACT MODE/Code MODE):
+## Programming Principles
 
 <PROGRAMMING PRINCIPLES>
 - algorithm_efficiency: use the most efficient algorithms and data structures
@@ -19,12 +21,14 @@ a. Read and understand the documentation in `docs/` and `tasks/`
 - file_management: break long files into smaller, more manageable files with smaller functions.
 - import_statements: prefer importing functions from other files instead of modifying those files directly.
 - file_organization: organize files into directories and folders.
-- reuse: prefer to reuse existing code instead of writing it from scratch. 
-- code_preservation: Preserve What Works. Don’t modify working components without necessity.
+- reuse: prefer to reuse existing code instead of writing it from scratch.
+- code_preservation: Preserve What Works. Don't modify working components without necessity.
 - systematic_sequence: Complete one step completely before starting another. Keep systematic sequence of functionalities.
 - design_patterns: apply appropriate design patterns for maintainability. Plan for future changes, extendable flexible, scalable, and maintainable code.
 - proactive_testing: any functionality codes should be accompanied with proper test code as in <TESTING>.
 </PROGRAMMING PRINCIPLES>
+
+## Systematic Code Protocol
 
 <SYSTEMATIC CODE PROTOCOL>
 
@@ -39,7 +43,7 @@ a. Read and understand the documentation in `docs/` and `tasks/`
 </DEPENDENCY ANALYSIS>
 
 <FLOW ANALYSIS>
-- Before proposing any changes, conduct a complete end-to-end flow analysis of the relevant use case from the entry point (e.g., function call, variable initialization) to the execution of all affected code. 
+- Before proposing any changes, conduct a complete end-to-end flow analysis of the relevant use case from the entry point (e.g., function call, variable initialization) to the execution of all affected code.
 - Track the flow of data and logic throughout all components involved to understand its full scope.
 </FLOW ANALYSIS>
 
@@ -57,5 +61,5 @@ a. Read and understand the documentation in `docs/` and `tasks/`
   3) all of the directly impacted modules or files;  
   4) potential side effects;  
   5) a detailed explanation of any tradeoffs.
-</STRUCTURED PROPOSALS> 
+</STRUCTURED PROPOSALS>
 </PLAN CODE>

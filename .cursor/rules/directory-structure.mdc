@@ -9,6 +9,7 @@ globs:
 alwaysApply: false
 ---     
 # Directory Structure
+
 ```mermaid
 flowchart TD
     Root[Project Root]
