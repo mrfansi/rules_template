@@ -275,7 +275,7 @@ So, it will change to "Chat" mode after its completion by default.
 
 This template provides a robust and adaptable framework of rules designed to enhance the performance of AI coding assistants like Cursor and CLINE. Rooted in established software engineering principles and documentation best practices, it ensures consistent and effective AI-assisted development across different platforms.
 
-## Project Directory Structure
+## Standard Project Directory Structure
 
 Below is the top-level directory structure from *clinerules/directory-structure*. This structure is central to how the project is organized:
 
@@ -321,7 +321,7 @@ This template is built upon two fundamental pillars:
 By combining these principles, the Rules Template aims to provide a structured and reliable approach to AI-assisted coding.
 And based on the popular knowledge and research in these two fileds, we came up with this template.
 
-# Rule Files
+## Rule Files
 
 This template relies on a carefully orchestrated system of directories and files for Cursor, Windsurf, CLINE and RooCode Within each environment, there are exactly three crucial files that shape how the AI operates:
 
@@ -433,31 +433,31 @@ flowchart TD
 
 **Core Files (Required):**
 
-  1. **`product_requirement_docs.md` (docs/product_requirement_docs.md):** Product Requirement Document (PRD) or Standard Operating Procedure (SOP).
-    - Defines the project's purpose, problems it solves, core requirements, and goals.
-    - Serves as the foundational document and source of truth for project scope.
+1. **`product_requirement_docs.md` (docs/product_requirement_docs.md):** Product Requirement Document (PRD) or Standard Operating Procedure (SOP).
+   - Defines the project's purpose, problems it solves, core requirements, and goals.
+   - Serves as the foundational document and source of truth for project scope.
 
-    Product Requirement Documents (PRDs) are foundational blueprints in software development, defining what a product should achieve and guiding teams to align on scope, features, and objectives .
+   Product Requirement Documents (PRDs) are foundational blueprints in software development, defining what a product should achieve and guiding teams to align on scope, features, and objectives.
 
-1. **`architecture.md` (docs/architecture.md):** System Architecture Document.
-    - Outlines the system's design, component relationships, and dependencies.
+2. **`architecture.md` (docs/architecture.md):** System Architecture Document.
+   - Outlines the system's design, component relationships, and dependencies.
 
-    Software architecture documentation is a blueprint that captures design decisions, component interactions, and non-functional requirements.
+   Software architecture documentation is a blueprint that captures design decisions, component interactions, and non-functional requirements.
 
-2. **`technical.md` (docs/technical.md):** Technical Specifications Document.
-    - Details the development environment, technologies used, key technical decisions, design patterns, and technical constraints.
+3. **`technical.md` (docs/technical.md):** Technical Specifications Document.
+   - Details the development environment, technologies used, key technical decisions, design patterns, and technical constraints.
 
-3. **`tasks_plan.md` (tasks/tasks_plan.md):** Task Backlog and Project Progress Tracker.
-    - Provides an in-depth list of tasks, tracks project progress, current status, and known issues.
+4. **`tasks_plan.md` (tasks/tasks_plan.md):** Task Backlog and Project Progress Tracker.
+   - Provides an in-depth list of tasks, tracks project progress, current status, and known issues.
 
-4. **`active_context.md` (tasks/active_context.md):** Active Development Context.
-    - Captures the current focus of development, active decisions, recent changes, and next steps.
+5. **`active_context.md` (tasks/active_context.md):** Active Development Context.
+   - Captures the current focus of development, active decisions, recent changes, and next steps.
 
-5. **`error-documentation.mdc` (.cursor/rules/error-documentation.mdc):** Error Documentation.
-    - Documents reusable fixes for mistakes and corrections, serving as a knowledge base of known issues and resolutions.
+6. **`error-documentation.mdc` (.cursor/rules/error-documentation.mdc):** Error Documentation.
+   - Documents reusable fixes for mistakes and corrections, serving as a knowledge base of known issues and resolutions.
 
-6. **`lessons-learned.mdc` (.cursor/rules/lessons-learned.mdc):** Lessons Learned Journal.
-    - A project-specific learning journal that captures patterns, preferences, and project intelligence for continuous improvement.
+7. **`lessons-learned.mdc` (.cursor/rules/lessons-learned.mdc):** Lessons Learned Journal.
+   - A project-specific learning journal that captures patterns, preferences, and project intelligence for continuous improvement.
 
 **Context Files (Optional):**
 
