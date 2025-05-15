@@ -12,7 +12,7 @@ alwaysApply: true
 
 Before every code implementation/change ALWAYS do 2 things:
 a. Read and understand the documentation in `docs/` and `tasks/`
-b. Use context7, fecth and serper-search-server mcp to get documentation how to implement the code.
+b. Use mcp server like context7, fecth and serper-search-server to get documentation how to implement the code.
 
 ## Programming Principles
 
