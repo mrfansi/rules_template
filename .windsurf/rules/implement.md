@@ -1,8 +1,8 @@
 ---
 trigger: model_decision
 description: Always attach when Implementing Code (Act/Code MODE)
-globs: 
 ---
+
 ---
 description: Include these rules while IMPLEMENTATION/Coding.
 globs: 
@@ -12,6 +12,7 @@ alwaysApply: true
 
 Before every code implementation/change ALWAYS do 2 things:
 a. Read and understand the documentation in `docs/` and `tasks/`
+b. Use context7, fecth and serper-search-server mcp to get documentation how to implement the code.
 
 ## Programming Principles
 
